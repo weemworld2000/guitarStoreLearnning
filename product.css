@@ -1,0 +1,63 @@
+.guitarplanet{
+    color: #343a40; /* สีของชื่อสินค้า */
+    animation: glow 2s infinite alternate;
+    padding: 20px;
+    text-align: center
+    
+}
+.product-card {
+    transition: transform 0.3s ease;
+    background-color: #f8f9fa; /* เพิ่มสีพื้นหลังให้กับ product card */
+    border: 1px solid #dee2e6; /* เพิ่มเส้นขอบ */
+    box-shadow: 0px 0px 10px 0px rgb(35, 35, 51); /* เพิ่มเรื่องแสงด้วย Box Shadow */
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* เพิ่มเรื่องแสงที่ตัวหนังสือ */
+}
+
+.product-price {
+    color: #007bff; /* สีของราคาสินค้า */
+}
+
+.btn-primary {
+    background-color: #007bff; /* สีของปุ่ม Add to Cart */
+    border-color: #007bff; /* สีขอบของปุ่ม Add to Cart */
+}
+
+.btn-primary:hover {
+    background-color: #0056b3; /* สีพื้นหลังเมื่อโฮเวอร์ที่ปุ่ม Add to Cart */
+    border-color: #0056b3; /* เส้นขอบเมื่อโฮเวอร์ที่ปุ่ม Add to Cart */
+}
+
+/* Custom styles for navbar */
+.navbar-custom {
+    background-color: #343a40; /* สีพื้นหลังของ Navbar */
+}
+
+.navbar-custom .navbar-brand {
+    color: #ffffff; /* สีของตัวหนังสือของ Navbar */
+}
+
+/* Animation for product title */
+@keyframes glow {
+    from {
+        text-shadow: none;
+    }
+    to {
+        text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+    }
+}
+.fixfooter{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    background-color: #343a40;
+    color: #ffffff;
+    text-align: center;
+    padding: 15px 0;
+    z-index: 9999; /* ให้ footer ของคุณอยู่ด้านหน้าของเนื้อหา */
+}

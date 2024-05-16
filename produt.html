@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Showcase</title>
+    <!-- Link to Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="product.css">
+    <link rel="stylesheet" href="product.js">
+    <!-- Custom styles -->
+    <style>
+        /* Additional CSS for animations */
+        .product-card {
+            transition: transform 0.3s ease;
+            background-color: #f8f9fa; /* เพิ่มสีพื้นหลังให้กับ product card */
+            border: 1px solid #dee2e6; /* เพิ่มเส้นขอบ */
+        }
+
+        .product-card:hover {
+            transform: scale(1.05);
+        }
+
+        .product-title {
+            color: #343a40; /* สีของชื่อสินค้า */
+        }
+
+        .product-price {
+            color: #007bff; /* สีของราคาสินค้า */
+        }
+
+        .btn-primary {
+            background-color: #007bff; /* สีของปุ่ม Add to Cart */
+            border-color: #007bff; /* สีขอบของปุ่ม Add to Cart */
+        }
+
+        .btn-primary:hover {
+            background-color: #0056b3; /* สีพื้นหลังเมื่อโฮเวอร์ที่ปุ่ม Add to Cart */
+            border-color: #0056b3; /* เส้นขอบเมื่อโฮเวอร์ที่ปุ่ม Add to Cart */
+        }
+
+        /* Custom styles for navbar */
+        .navbar-custom {
+            background-color: #343a40; /* สีพื้นหลังของ Navbar */
+        }
+
+        .navbar-custom .navbar-brand {
+            color: #ffffff; /* สีของตัวหนังสือของ Navbar */
+        }
+    </style>
+</head>
+
+<body>
+    
+    <header class="bg-dark text-light py-4">
+        <div class="container">
+            <h1 class="mb-0">Guitar Planet</h1>
+            <nav>
+                <ul class="list-inline mb-0">
+                    <li class="list-inline-item"><a href="index.html" class="text-light">Home</a></li>
+                    <li class="list-inline-item"><a href="produt.html" class="text-light">Products</a></li>
+                    <li class="list-inline-item"><a href="about.html" class="text-light">About</a></li>
+                    <li class="list-inline-item"><a href="contact.html" class="text-light">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <h1 class="guitarplanet">Product Showcase</h1>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card product-card mb-4">
+                    <img src="img/tlmdB.jpg" class="card-img-top" alt="Product 1">
+                    <div class="card-body">
+                        <h5 class="card-title product-title">Fender Aerodyne Special Telecaster</h5>
+                        <p class="card-text product-price">$1245.55</p>
+                        <a href="#" class="btn btn-primary">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card product-card mb-4">
+                    <img src="img/jmtB.webp" class="card-img-top" alt="Product 2">
+                    <div class="card-body">
+                        <h5 class="card-title product-title">Fender 2024 Collection Hybrid II Jazzmaster Quilt</h5>
+                        <p class="card-text product-price">$1121.00</p>
+                        <a href="#" class="btn btn-primary">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card product-card mb-4">
+                    <img src="img/Blue.webp" class="card-img-top" alt="Product 3">
+                    <div class="card-body">
+                        <h5 class="card-title product-title">Fender 2024 Collection Hybrid II Stratocaster HSS</h5>
+                        <p class="card-text product-price">$1021.35</p>
+                        <a href="#" class="btn btn-primary">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card product-card mb-4">
+                    <img src="img/olpW.jpg" class="card-img-top" alt="Product 1">
+                    <div class="card-body">
+                        <h5 class="card-title product-title">Fender Albert Hammond Jr Stratocaster</h5>
+                        <p class="card-text product-price">$1121.00</p>
+                        <a href="#" class="btn btn-primary">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card product-card mb-4">
+                    <img src="img/statBL.jpg" class="card-img-top" alt="Product 2">
+                    <div class="card-body">
+                        <h5 class="card-title product-title">Fender American Ultra Luxe Stratocaster HSS Floyd Rose</h5>
+                        <p class="card-text product-price">$2740.22</p>
+                        <a href="#" class="btn btn-primary">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card product-card mb-4">
+                    <img src="img/tlGr.jpg" class="card-img-top" alt="Product 3">
+                    <div class="card-body">
+                        <h5 class="card-title product-title">Fender Brent Mason Telecaster</h5>
+                        <p class="card-text product-price">$2989.33</p>
+                        <a href="#" class="btn btn-primary">Add to Cart</a>
+                    </div>
+                </div>
+            </div>
+            <!-- Add more product cards here -->
+        </div>
+    </div>
+    <footer class="fixfooter">
+        <div class="container">
+            <p class="mb-0 text-center">&copy; 2024 Guitar Planet. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Link to Bootstrap JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
